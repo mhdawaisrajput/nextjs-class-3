@@ -27,6 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
         <button type="button" onClick={() => router.push('/admit-card')}>Admit Card Page</button>
         <button type="button" onClick={() => router.push('/dashboard')}>Dashboard Page</button>
         <button type="button" onClick={() => router.push('/login')}>Login Page</button>

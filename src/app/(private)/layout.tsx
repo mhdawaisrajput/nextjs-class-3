@@ -3,6 +3,7 @@
 import localFont from "next/font/local";
 import "../globals.css";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -29,7 +30,7 @@ export default function RootLayout({
       >
         
         <button type="button" onClick={() => router.push('/admit-card')}>Admit Card Page</button>
-        <button type="button" onClick={() => router.push('/dashboard')}>Dashboard Page</button>
+        <button><Link href="/dashboard">Dashboard Page</Link></button>
         <button type="button" onClick={() => router.push('/login')}>Login Page</button>
         {children}
       </body>

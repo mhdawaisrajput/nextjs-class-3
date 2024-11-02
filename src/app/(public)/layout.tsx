@@ -27,8 +27,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <button type="button" onClick={() => router.push('/')}>Home Page</button>  {/*Slow Method*/}
-        <button><Link href="/about-us">About Page</Link></button>    {/*Fast Method*/}
+        <button type="button" onClick={() => router.push('/')}>Home Page</button>   {/* Button Method*/}
+        <button><Link href="/about-us">About Page</Link></button>    {/* Link Method*/}
         <button type="button" onClick={() => router.push('/contact-us')}>Contact Page</button>
         <button><Link href="/login">Login Page</Link></button>
         {children}
